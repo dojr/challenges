@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../comboPhone.cpp \
 ../menu.cpp \
 ../roman.cpp 
 
 OBJS += \
+./comboPhone.o \
 ./menu.o \
 ./roman.o 
 
 CPP_DEPS += \
+./comboPhone.d \
 ./menu.d \
 ./roman.d 
 

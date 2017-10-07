@@ -1,19 +1,31 @@
-/*
- * menu.cpp
- *
- *  Created on: Sep 13, 2017
- *      Author: donald
- */
-
-
-#include "headers/roman.h"
+#include "challenges.h"
 #include <iostream>
-#include <string>
 
 int main(){
-	std::string test = "MCDLXXVI"; //1904
-	Roman object;
-	int num = object.romanToInt(test);
-	std::cout << "Number: " << num;
-}
+  Challenges challenges;
+  int num;
+  std::cout << "Enter challenge number: ";
+  std:: cin >> num;
 
+  switch (num) {
+    case 1 :
+
+    std::cout << challenges.romanToInt("MXXX") << std::endl;
+    break;
+
+    case 2 :  {
+
+      std::vector<int>nums;
+      nums.push_back(3);
+      nums.push_back(2);
+      nums.push_back(2);
+      nums.push_back(3);
+      int length = challenges.removeElement(nums,3);
+      for(int i=0;i<length;i++){
+        std::cout << nums.at(i) << std::endl;
+      }
+      break;
+    }
+  }
+
+}
